@@ -5,18 +5,177 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Totally Semantic Title</title>
 
-		<meta name="author" content="Your Name Here">
-		<meta name="description" content="This is a basic index template; therefore, the content of this tag will need to be updated later.">
+		<meta name="author" content="Tyrrell Dakin">
+		<meta name="description" content="Assignment-02">
 
 		<!-- Google Fonts -->
-
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 		<!-- Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
-		</div>
+		<header>
+			<div class="inner-container">
+				<div class="flex-container">
+					<h1>Blog</h1>
+					<button class="toggle-btn">
+						<svg viewBox="0 0 100 80" width="40" height="20">
+							<rect width="100" height="10" rx="8"></rect>
+							<rect y="30" width="75" height="10" rx="8"></rect>
+							<rect y="60" width="100" height="10" rx="8"></rect>
+						</svg>
+					</button>
+				</div>
+				<nav>
+					<ul class="main-menu">
+						<li class="links">
+							<a href="#" class="first-link">About
+								<img src="img/svg/chevron.svg" alt="Down Arrow">
+							</a>
+							<ul class="details1">
+								<li><a href="#">Bio</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">In The Media</a></li>
+							</ul>
+						</li>
+						<li class="links">
+							<a href="#" class="second-link">Things to Do
+								<img src="img/svg/chevron.svg" alt="Down Arrow">
+							</a>
+							<ul class="details2">
+								<li><a href="#">Good Food</a></li>
+								<li><a href="#">Local Travel</a></li>
+								<li><a href="#">Arts & Culture</a></li>
+								<li><a href="#">Family</a></li>
+								<li><a href="#">Festivals</a></li>
+							</ul>
+						</li>
+						<li class="links">
+							<a href="#" class="third-link">Contact
+								<img src="img/svg/chevron.svg" alt="Down Arrow">
+							</a>
+							<ul class="details3">
+								<li><a href="#">Video Blog</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="start">
+				<div class="intro">
+					<div class="good-food">
+						<h2 class="good">Good</h2>
+						<h2 class="food">Food</h2>
+					</div>
+					<p>I love to eat! Check out some dishes I've tried and restaurants I recommend you try.</p>
+					<button>Discover</button>
+				</div>
+				<div class="images">
+					<img src="img/breakfast.png" class="breakfast" alt="breakfast">
+					<img src="img/platter.png" class="platter" alt="platter">
+				</div>
+			</div>
+			<div class="local-travel">
+				<div class="text-content">
+					<h2 class="travel">Local<span class="local">Travel</span></h2>
+					<button>Discover</button>
+				</div>
+				<img src="img/water.png" alt="water">
+			</div>
+			<div class="stuff">
+				<h1>&#9829;</h1>
+				<h2>Stuff</h2>
+			</div>
+			<div class="all-content">
+				<div class="prep-market">
+					<div class="body-container">
+						<div class="body-images">
+							<img src="img/tacos-al-pastor.png" alt="tacos">
+						</div>
+						<div class="body-heading">
+							<h3>Fresh Prep</h3>
+							<p>Sign up today to enjoy the Fresh Prep difference. Enjoy a more convenient and quality meal kit service delivered to your door.</p>
+							<p>Use our discount code for 10% off your first purchase.</p>
+							<p class="underline">VISIT FRESH PREP</p>
+						</div>
+					</div>
+					<div class="body-container">
+						<div class="body-images">
+							<img src="img/farmers-market-colorful-carrots.png" alt="carrots">
+						</div>
+						<div class="body-heading">
+							<h3>Farmers' Market</h3>
+							<p>Edmontonians love farmers' markets and you should too. You'll find everything from fresh local produce to hand-made jewellery, clothing, art and unique home goods. There is a market for every part of the city, and we've got you covered with this list of favourites.</p>
+							<p class="underline">CHECKOUT THE LIST</p>
+						</div>
+					</div>
+				</div>
+				<div class="prep-market">
+					<div class="body-container">
+						<div class="body-images">
+							<img src="img/inside-the-brewery.png" alt="brewery">
+						</div>
+						<div class="body-heading">
+							<h3>Cabin Brewery</h3>
+							<p>Our brewery has a bright and family-friendly tasting room, a retail area and small patio, open 6 days a week.</p>
+							<p>We are super proud of our beautiful brewery and love to show it off. Book a tour to learn more about where we came from and how we make our delicious beer.</p>
+							<p class="underline">BOOK A TOUR</p>
+						</div>
+					</div>
+					<div class="body-container">
+						<div class="body-images">
+							<img src="img/frothy-hot-chocolate-in-mug.png" alt="hot-chocolate">
+						</div>
+						<div class="body-heading">
+							<h3>Hot Chocolate Bombs</h3>
+							<p>Hot Chocolate Bombs are chocolate spheres filled with homemade chocolate milk powderf and marshmallows that are put into a mug with hot milk for a delicious cup of hot cocoa. Try my Best Homemade Hot Cocoa for another rich and creamy hot chocolate recipe.</p>
+							<p class="underline">MAKE THIS RECIPE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="video-blog">
+				<h1>Video Blog</h1>
+				<p>Follow me on my YouTube channel to get news, discounts and more.</p>
+				<button>Discover</button>
+				<img src="img/camera.png" alt="camera">
+			</div>
+		</main>
 	</body>
+	<footer>
+		<div class="footer-container1">
+			<div class="about">
+				<h4>About</h4>
+				<li>Bio</li>
+				<li>Services</li>
+				<li>In the Media</li>
+			</div>
+			<div class="to-do">
+				<h4>Things to Do</h4>
+				<li>Good Food</li>
+				<li>Local Travel</li>
+				<li>Arts & Culture</li>
+				<li>Family</li>
+				<li>Festivals</li>
+			</div>
+			</div>
+			<div class="footer-container2">
+			<div class="contact">
+				<h4>Contact</h4>
+				<li>Video Blog</li>
+			</div>
+			<div class="icons">
+				<img src="img/svg/facebook.svg" alt="facebook">
+				<img src="img/svg/instagram.svg" alt="instagram">
+				<img src="img/svg/youtube.svg" alt="youtube">
+				<img src="img/svg/linkedin.svg" alt="linkedin">
+			</div>
+		</div>
+	</footer>
 </html>
+

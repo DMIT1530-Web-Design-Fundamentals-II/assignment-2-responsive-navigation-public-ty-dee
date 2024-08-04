@@ -1,0 +1,488 @@
+body {
+    font-family: "Merriweather Sans";
+}
+
+header {
+    background-color: #3f3f3f;
+    color: white;
+    z-index: 10;
+    padding: 0.5rem;
+}
+
+.main-menu {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+
+}
+
+a:hover {
+    color: #727812;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > a {
+    color: white;
+    margin-right: 1rem;
+}
+
+.first-link, .second-link, .third-link {
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;   
+    background-color: #3f3f3f;
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+    border-bottom: 1px solid #fff;
+}
+
+nav li {
+    margin: 0.25rem;
+}
+
+nav li a {
+    display: block;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.links img {
+    display: none;
+    width: 1rem;
+    margin-left: 0.5rem;
+    filter: invert(100%);
+}
+
+.toggle-btn {
+    background-color: #3f3f3f;
+    border: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+.toggle-btn svg rect {
+    fill: white;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #3f3f3f;
+    color: white;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 40%;
+}
+
+.intro > button:hover, .local-travel > button:hover, .video-blog > button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.intro > button {
+    margin: 1.5rem 1rem;
+}
+
+.good-food, .travel {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    text-wrap: wrap;
+    margin-left: 1rem;
+}
+
+.good {
+    color: #404040;
+}
+
+.food, .local {
+    color: #707070;
+    padding-left: 3rem;
+}
+
+.breakfast {
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+    width: 75%;
+}
+
+.platter{
+    margin-left: 0.5rem;
+    position: relative;
+    top: -1.875rem;
+    width: 75%;
+}
+
+.local-travel {
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+}
+
+.travel {
+    color: #727812;
+}
+
+.local-travel > button {
+    align-self: flex-end;
+    margin: 1rem;
+}
+
+.local-travel > img {
+    width: 50%;
+    align-self: flex-end;
+    margin: 1rem;
+}
+
+.stuff > h1{
+    position: relative;
+    bottom: -4.5rem;
+    right: -3rem;
+    color: #bf0000;
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.stuff > h2 {
+    font-size: 5rem;
+    color: #404040;
+    text-align: center;
+}
+
+.body-images {
+    display: flex;
+    justify-content: center;
+    background-color: #d8d8d8;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.images {
+    width: 100%;
+}
+
+.body-heading {
+    position: relative;
+    top: -2.5rem;
+    margin-left: 1rem;
+}
+
+.body-heading > h3 {
+    font-size: 2.5rem;
+    color: #b29124;
+}
+
+.body-heading > p {
+    margin-bottom: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.video-blog {
+    background-color: #3f3f3f;
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-blog > h1 {
+    font-size: 5rem;
+    margin-left: 0.5rem;
+}
+
+.video-blog > p {
+    margin-left: 0.5rem;
+}
+
+.video-blog > button {
+    background-color: white;
+    color: #707070;
+    align-self: flex-end;
+    width: 50%;
+    margin: 1rem 1rem 3rem 1rem;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.footer-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about, .to-do, .contact {
+    margin: 1rem;
+}
+
+.footer-container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    margin: auto;
+    margin-left: 5rem;
+}
+
+.icons > img {
+    display: flex;
+    margin: 0.25rem;
+    filter: invert(100%);
+}
+
+.about > li:hover, .about > h4:hover, .to-do > li:hover, .to-do > h4:hover, .contact > li:hover, .contact > h4:hover {
+    color: #008000;
+}
+
+.icons > img:hover {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(80%) saturate(4305%) hue-rotate(107deg) brightness(94%) contrast(105%);
+}
+
+@media screen and (min-width: 820px) {
+    .links img {
+        display: unset;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .inner-container {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    nav {
+        max-height: 0;
+        overflow: visible;
+        background-color: gray;
+    }
+
+    .main-menu {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin: auto;
+        padding-right: 5rem;
+    }
+
+    .first-link, .second-link, .third-link {
+        justify-content: center;
+    }
+
+    .details1, .details2, .details3 {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .show-details {
+        max-height: unset;
+        overflow: visible;
+        background-color: #3f3f3f;
+    }
+
+    .start {
+        display: flex;
+    }
+    
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .text-content > button {
+        align-self: flex-end;
+        width: 50%;
+    }
+    
+    .local-travel {
+        flex-direction: row;
+    }
+
+    .local-travel > img {
+        margin-left: 10rem;
+        width: 30%;
+        position: relative;
+        top: 2rem;
+    }
+
+    .stuff > h2 {
+        text-align: start;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
+    }
+
+    .body-images {
+        width: 45vw;
+    }
+
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-heading > h3 {
+        margin-top: 0.5rem;
+    }
+
+    .prep-market {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .video-blog {
+        width: 70%;
+    }
+
+    .video-blog > h1 {
+        width: 60%;
+        margin: 2rem;
+    }
+
+    .video-blog > p {
+        margin: 1rem;
+        padding-left: 2rem;
+        width: 60%;
+    }
+    
+    .video-blog > button {
+        width: 40%;
+        margin-right: 15rem;
+    }
+
+    .video-blog > img{
+        position: relative;
+        width: 50%;
+        align-self: flex-end;
+        bottom: 20rem;
+        left: 10rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icons {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .main-menu {
+        padding-right: 8rem;
+    }
+
+    .flex-container > h1 {
+        margin-left: 2rem;
+    }
+
+    .intro {
+        width: 30%;
+        margin: auto;
+    }
+
+    .images {
+        width: 30%;
+        margin: auto;
+    }
+
+    .travel {
+        font-size: 8rem;
+        text-align: start;
+    }
+
+    .local {
+        font-size: 6rem;
+        margin-left: 12rem;
+    }
+
+    .text-content {
+        width: 40%;
+    }
+    .text-content > button {
+        width: 30%;
+        margin-right: 5rem;
+    }
+
+    .local-travel > img {
+        top: -2rem;
+        width: 30%;
+    }
+
+    .stuff > h1 {
+        font-size: 4rem;
+        top: 6.5rem;
+    }
+    
+    .stuff > h2 {
+        font-size: 8rem;
+    }
+    
+    .all-content {
+        display: flex;
+        margin: 1rem;
+        
+    }
+
+    .body-images {
+        width: calc(100vw / 5 - 0.5rem);
+    }
+
+    .body-heading {
+        width: calc(100vw / 5 - 0.5rem);
+    }
+
+    .video-blog > h1 {
+        font-size: 8rem;
+        text-align: center;
+    }
+
+    .video-blog > p {
+        align-self: center;
+        margin-right: 10rem;
+        width: 40%;
+    }
+
+    .video-blog > button {
+        width: 20%;
+        align-self: center;
+    }
+}
